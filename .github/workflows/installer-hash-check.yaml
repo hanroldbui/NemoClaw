@@ -12,9 +12,6 @@ on:
     types: [opened, synchronize, reopened]
   push:
     branches: [main]
-  schedule:
-    # Weekly fallback in case upstream changes between PRs
-    - cron: "30 9 * * 1"
   workflow_dispatch:
 
 permissions:
